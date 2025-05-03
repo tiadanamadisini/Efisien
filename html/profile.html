@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Premium | Kelas 5 Efisien</title>
-  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="/Efisien/css/profile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
   <div class="profile-container">
     <!-- Profile Header -->
     <div class="profile-header">
-      <img src="gambar/poster.jpg" class="profile-avatar">
+      <img src="/Efisien/gambar/poster.jpg" class="profile-avatar">
       <h1 class="profile-name">5 EFI</h1>
       <div class="profile-badge">
         <i class="fas fa-star"></i>
@@ -86,7 +86,7 @@ menuToggle.addEventListener('click', () => {
         // Check if user is logged in
         if (localStorage.getItem('isLoggedIn') !== 'true') {
           // If not logged in, redirect to login page
-          window.location.href = 'halamanutama.html';
+          window.location.href = '/Efisien/halamanutama.html';
         }
     
         // Logout functionality
@@ -95,7 +95,7 @@ menuToggle.addEventListener('click', () => {
           localStorage.removeItem('isLoggedIn');
           
           // Redirect to login page
-          window.location.href = 'halamanutama.html';
+          window.location.href = '/Efisien/halamanutama.html';
         });
       </script>
 </body>
