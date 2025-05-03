@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelas 5 Efisien</title>
+  <link rel="stylesheet" href="/css/halamanutama.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body oncontextmenu="return false">
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">MEMUATKAN KANDUNGAN...</div>
+    </div>
+  </div>
+
+  <!-- Premium Navbar -->
+  <div class="navbar">
+    <button class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="brand">5 EFISIEN</div>
+    <div class="navbar-actions">
+      <div class="premium-badge">MODE : PREMIUM</div>
+    </div>
+  </div>
+
+  <!-- Luxury Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">5 EFISIEN</div>
+    <ul class="sidebar-menu">
+      <li><a href="/html/halamanutama.html"><i class="fas fa-home"></i> Halaman Utama</a></li>
+      <li><a href="/html/profile.html"><i class="fas fa-user"></i> Profil Premium</a></li>
+      <li><a id="settingsButton"><i class="fas fa-cog"></i> Tetapan</a></li>
+      <li><a href="/html/gambardisimpan.html"><i class="fas fa-images"></i> Gambar Disimpanan</a></li>
+      <li><a id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Keluar</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      © 2024 Kelas Efisien | Versi Eksklusif
+    </div>
+  </div>
+
+  <!-- Hero Slider -->
+  <div class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('/gambar/poster.jpg')">
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('/gambar/kelas.jpg')">">
+    </div>
+    
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('/gambar/jm.jpg')">
+    </div>
+    
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+      <div class="slider-dot active" data-slide="0"></div>
+      <div class="slider-dot" data-slide="1"></div>
+      <div class="slider-dot" data-slide="2"></div>
+    </div>
+  </div>
+
+  <!-- Exclusive Gallery -->
+  <div class="gallery" id="gallery">
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (3).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (2).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (1).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/cgu (3).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2025</h3>
+        <p>Gambar Cikgu Semasa Jamuan Raya</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/cgu (2).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2025</h3>
+        <p>Gambar Cikgu Semasa Jamuan Raya</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/cgu (1).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2025</h3>
+        <p>Gambar Cikgu Semasa Jamuan Raya</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (4).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (5).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (6).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (7).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (8).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (9).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (10).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (11).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (12).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (13).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div><div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (14).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div><div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (17).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div><div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (15).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div><div class="gallery-item">
+      <div class="premium-tag">PREMIUM</div>
+      <img src="/gambar/jm (16).jpg" id="qualitySelect">
+      <div class="item-info">
+        <h3>Jamuan Raya 2024</h3>
+        <p>Jamuan Raya Sekolah</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Luxury Overlays -->
+  <div class="overlay zoom-overlay" id="zoomOverlay">
+    <img id="zoomImage" />
+  </div>
+
+  <div class="scroll-overlay" id="scrollOverlay">
+    <nav class="navbar">
+      <button class="back-btn" onclick="window.history.back()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="brand">
+          <div class="brand">5 EFISIEN</div>
+      </div>
+      <div></div>
+    </nav>
+    <button class="close-btn" id="closeScroll">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <!-- Exclusive Comment Section -->
+  <div class="comment-section" id="commentSection">
+    <div class="comment-header">
+      <div class="comment-title">Komen</div>
+      <button class="close-comment" id="closeComment">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="comments-list" id="commentsList"></div>
+    <div class="comment-input-container">
+      <input type="text" class="comment-input" id="commentInput" placeholder="komen...">
+      <button class="send-comment" id="sendComment">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">KELAS 5 EFISIEN</div>
+    <p class="copyright">© 2024/2025 Kelas Efisien | Hak Cipta Terpelihara</p>
+  </footer>
+
+  <!-- Popup Settings -->
+  <div class="settings-popup" id="settingsPopup">
+    <div class="settings-content">
+      <div class="settings-header">
+        <h2 class="settings-title">
+          <i class="fas fa-lock"></i>
+          TETAPAN
+        </h2>
+        <button class="close-settings" id="closeSettings">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="settings-group">
+        <label class="settings-label">Tema Aplikasi</label>
+        <select class="settings-select" id="themeSelect">
+          <option value="dark">Gelap (Default)</option>
+          <option value="darker">Gelap Premium</option>
+          <option value="amoled">Hitam AMOLED</option>
+        </select>
+      </div>
+      
+      <div class="settings-group">
+        <div class="switch-container">
+          <span class="settings-label">Tampilkan Konten Premium</span>
+          <label class="switch">
+            <input type="checkbox" id="premiumToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        
+        <div class="switch-container">
+          <span class="settings-label">Notifikasi Baru</span>
+          <label class="switch">
+            <input type="checkbox" id="notifToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="settings-group">
+        <label class="settings-label">Kualiti Gambar</label>
+        <select class="settings-select" id="qualitySelect">
+          <option value="auto">Auto (Disyorkan)</option>
+          <option value="high">Tinggi</option>
+          <option value="medium">Sederhana</option>
+          <option value="low">Rendah</option>
+        </select>
+      </div>
+      
+      <button class="settings-button" id="saveSettings">
+        <i class="fas fa-save"></i> SIMPAN TETAPAN
+      </button>
+      
+      <div class="settings-footer">
+        Tetapan ini akan disimpan untuk akaun anda sahaja
+        <p>(masih dalam pembaikan)</p>
+      </div>
+    </div>
+  </div>
+<script src="/js/setting.js"></script>
+  <script src="/js/halamanutama.js"></script>
+  <script>
+    // Check if user is logged in
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+      // If not logged in, redirect to login page
+      window.location.href = '/halamanutama.html';
+    }
+
+    // Logout functionality
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+      // Remove login status
+      localStorage.removeItem('isLoggedIn');
+      
+      // Redirect to login page
+      window.location.href = '/halamanutama.html';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Premium | Kelas 5 Efisien</title>
+  <link rel="stylesheet" href="/css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Premium Navbar -->
+  <nav class="navbar">
+    <button class="back-btn" onclick="window.history.back()">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+        <div class="brand">5 EFISIEN</div>
+    </div>
+    <div></div>
+  </nav>
+
+  <!-- Profile Container -->
+  <div class="profile-container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <img src="/gambar/poster.jpg" class="profile-avatar">
+      <h1 class="profile-name">5 EFI</h1>
+      <div class="profile-badge">
+        <i class="fas fa-star"></i>
+        <span>ANGGOTA EKSKLUSIF</span>
+      </div>
+      <p>Ahli Premium sejak 3 Mei 2025</p>
+      
+      <div class="profile-stats">
+        <div class="stat-item">
+          <div class="stat-number">45</div>
+          <div class="stat-label">Kandungan</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">45</div>
+          <div class="stat-label">Suka</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">45</div>
+          <div class="stat-label">Komen</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-content">
+      <h2 class="section-title">
+        <i class="fas fa-info-circle"></i>
+        MAKLUMAT PERIBADI
+      </h2>
+      
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">NAMA PENGGUNA</div>
+          <div class="info-value">5 EFI</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">SUBJECT ELEKTIF</div>
+          <div class="info-value">Prinsip Perakaunan</div>
+          <div class="info-value">Perniagaan</div>
+          <div class="info-value">Sains Sukan/</div>
+          <div class="info-value">Sains Komputer/</div>
+          <div class="info-value">Grafik Komunikasi Teknikal</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">TARIKH DAFTAR</div>
+          <div class="info-value">03/05/2024</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">STATUS</div>
+          <div class="info-value">Aktif</div>
+        </div>
+      </div>
+      
+      <script>
+        // Sidebar toggle
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('show');
+  menuToggle.innerHTML = sidebar.classList.contains('show') ? 
+    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+});
+        // Check if user is logged in
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+          // If not logged in, redirect to login page
+          window.location.href = '/halamanutama.html';
+        }
+    
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+          // Remove login status
+          localStorage.removeItem('isLoggedIn');
+          
+          // Redirect to login page
+          window.location.href = '/halamanutama.html';
+        });
+      </script>
+</body>
+</html>

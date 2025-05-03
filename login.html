@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas Efisien | Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0a0a14;
+      --secondary: #1a1a2e;
+      --accent: #e6b422;
+      --text: #f0f0f0;
+      --text-secondary: #b0b0b0;
+      --card-bg: rgba(30, 30, 46, 0.8);
+      --overlay: rgba(10, 10, 20, 0.9);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--primary);
+      color: var(--text);
+      overflow-x: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Login Container */
+    .login-container {
+      background: var(--secondary);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .login-logo {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--accent), #f5d742);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .login-title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      color: var(--text);
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text-secondary);
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, var(--accent), #d4af37);
+      color: var(--primary);
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .login-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(230, 180, 34, 0.3);
+    }
+
+    .login-footer {
+      margin-top: 20px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .error-message {
+      color: #ff6b6b;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Login Form -->
+  <div class="login-container">
+    <div class="login-logo">
+      <i class="fas fa-crown"></i>
+      <span>KELAS EFISIEN</span>
+    </div>
+    <h2 class="login-title">LOGIN AHLI EKSKLUSIF</h2>
+    
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Nama Pengguna</label>
+        <input type="text" id="username" placeholder="Masukkan nama pengguna" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Kata Laluan</label>
+        <input type="password" id="password" placeholder="Masukkan kata laluan" required>
+      </div>
+      
+      <button type="submit" class="login-button">
+        <i class="fas fa-lock-open"></i> LOGIN
+      </button>
+      
+      <div class="error-message" id="errorMessage">
+        Nama pengguna atau kata laluan salah!
+      </div>
+    </form>
+    
+    <div class="login-footer">
+      Hanya untuk ahli berdaftar sahaja
+    </div>
+  </div>
+
+  <script>
+    // Simple login system
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      // Simple validation (in real app, this would check against a database)
+      if (username === 'loafisien' && password === '5efi') {
+        // Store login status in localStorage
+        localStorage.setItem('isLoggedIn', 'true');
+        
+        // Redirect to homepage
+        window.location.href = '/html/halamanutama.html';
+      } else {
+        // Show error message
+        document.getElementById('errorMessage').style.display = 'block';
+      }
+    });
+
+    // Check if user is already logged in (would redirect to homepage)
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      window.location.href = '/html/halamanutama.html';
+    }
+  </script>
+</body>
+</html>
