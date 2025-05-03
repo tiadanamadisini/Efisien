@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Galeri Eksklusif 5 Efisien</title>
-  <link rel="stylesheet" href="css/gambardisimpan.css">
-  <link rel="stylesheet" href="css/halamanutama.css">
+  <link rel="stylesheet" href="/Efisien/css/gambardisimpan.css">
+  <link rel="stylesheet" href="/Efisien/css/halamanutama.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -110,7 +110,7 @@
       </div>
     </div>
   </div>
-  <script src="js/setting.js"></script>
+  <script src="/Efisien/js/setting.js"></script>
   <script>
     // Sidebar toggle
 menuToggle.addEventListener('click', () => {
@@ -118,101 +118,115 @@ menuToggle.addEventListener('click', () => {
   menuToggle.innerHTML = sidebar.classList.contains('show') ? 
     '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
 });
+     // Check if user is logged in
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+          // If not logged in, redirect to login page
+          window.location.href = '/Efisien/halamanutama.html';
+        }
+    
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+          // Remove login status
+          localStorage.removeItem('isLoggedIn');
+          
+          // Redirect to login page
+          window.location.href = '/Efisien/halamanutama.html';
+        });
 
     // Data Galeri
     const galleryData = [
       { 
-        image: 'gambar/jm (1).jpg', 
+        image: '/Efisien/gambar/jm (1).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya SekolahKelas', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (2).jpg', 
+        image: '/Efisien/gambar/jm (2).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (3).jpg', 
+        image: '/Efisien/gambar/jm (3).jpg', 
         title: 'Jamuan Raya 2024 ',
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (4).jpg', 
+        image: '/Efisien/gambar/jm (4).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (5).jpg', 
+        image: '/Efisien/gambar/jm (5).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (6).jpg', 
+        image: '/Efisien/gambar/jm (6).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (7).jpg', 
+        image: '/Efisien/gambar/jm (7).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (8).jpg', 
+        image: '/Efisien/gambar/jm (8).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (9).jpg', 
+        image: '/Efisien/gambar/jm (9).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya SekolahKelas', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (10).jpg', 
+        image: '/Efisien/gambar/jm (10).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (11).jpg', 
+        image: '/Efisien/gambar/jm (11).jpg', 
         title: 'Jamuan Raya 2024 ',
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (12).jpg', 
+        image: '/Efisien/gambar/jm (12).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (13).jpg', 
+        image: '/Efisien/gambar/jm (13).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (17).jpg', 
+        image: '/Efisien/gambar/jm (17).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (15).jpg', 
+        image: '/Efisien/gambar/jm (15).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
       },
       { 
-        image: 'gambar/jm (16).jpg', 
+        image: '/Efisien/gambar/jm (16).jpg', 
         title: 'Jamuan Raya 2024', 
         desc: 'Jamuan Raya Sekolah', 
         premium: true 
