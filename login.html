@@ -172,7 +172,7 @@
         localStorage.setItem('isLoggedIn', 'true');
         
         // Redirect to homepage
-        window.location.href = '/html/halamanutama.html';
+        window.location.href = 'html/halamanutama.html';
       } else {
         // Show error message
         document.getElementById('errorMessage').style.display = 'block';
@@ -181,7 +181,7 @@
 
     // Check if user is already logged in (would redirect to homepage)
     if (localStorage.getItem('isLoggedIn') === 'true') {
-      window.location.href = '/html/halamanutama.html';
+      window.location.href = 'html/halamanutama.html';
     }
   </script>
 </body>
